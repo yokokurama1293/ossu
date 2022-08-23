@@ -1,14 +1,15 @@
-hours = input("Enter Hours: \n")
+hrs = input("Enter Hours: \n")
 rate = input("Enter Rate: \n")
 
-hours = float(hours)
-rate  = float(rate)
+#Convert Hours to float
+r = float(rate)
+h = float(hrs)
 
-if hours > 40 :
-    flat = rate * 40
-    ot   = hours - 40
-    ot_pay = ot * 1.75
-    print(flat+ot_pay)
+if h > 40 :
+    flat = r * 40
+    ot   = h - 40
+    ot_pay = (ot * 1.5) * ot
+    print(flat + ot_pay)
 
 else : 
-    print(rate * hours)
+    print(r * h)
