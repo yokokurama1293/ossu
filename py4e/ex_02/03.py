@@ -1,9 +1,9 @@
-hours = input("How many hours did you work this week? \n")
-rate = input("What is your hourly rate? \n")
+hrs = input("Enter Hours? \n")
+rate = input("Enter Rate? \n")
 #Convert string to int and int to float
-hours = int(hours)
-rate = int(rate)
-total = float(rate * hours)
+hrs = float(hrs)
+rate = float(rate)
+pay = (rate * hrs)
 
 #All Done
-print("You made $", total, "this pay period")
+print("Pay:", pay)
